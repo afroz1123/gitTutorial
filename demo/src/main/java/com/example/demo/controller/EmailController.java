@@ -13,6 +13,12 @@ public class EmailController {
     @Autowired
     EmailService emailService;
 
+    /**
+     * added email controller
+     * @param emailDetails
+     * @return
+     */
+
     @PostMapping("/sendEmail")
     public String sendEmail(@RequestBody EmailDetails emailDetails)
     {
